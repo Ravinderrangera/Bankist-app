@@ -14,7 +14,7 @@ const tabsContent = document.querySelectorAll('.operations__content');
 ///////////////////////////////////////////////////////////////////
 
 // Modal window
-const openModal = function () {
+const openModal = function (e) {
   e.preventDefault();
   //When we click the (open account in the scrolling position) So we'll see that the page scroll to back to the top, and that is because the (' <a class="nav__link nav__link--btn btn--show-modal" href="#"') is actually a link and not a button and on the link when we have this # here as the hyperlink. So, HRF, then that will make the page jump to the top. So that's the default behaviour when we click the link that has this hyperlink.
   //And if that's the default we already know a way of preventing default. Well all we need here in this function is to get access of the event and then on the event we call prevent default.
